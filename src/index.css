@@ -110,6 +110,8 @@ footer{
         bottom:0;
        
         font-size:18px;
+        font-weight: 700;
+        line-height: 143%;
         max-width: 300px;
         max-height:52px;
       }
