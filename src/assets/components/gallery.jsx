@@ -10,7 +10,7 @@ export default function Gallery(){
           
             
             {logements.map((logement)=>(
-                <Card key={logement.id} title={logement.title} cover={logement.cover}/>
+                <Card key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}/>
             ))}
         </div>
      )
