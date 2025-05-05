@@ -4,6 +4,7 @@ import Carroussel from "../components/carroussel";
 import Tag from "../components/tag";
 import StarRating from "../components/rating";
 import DropdownButton from "../components/dropdown";
+import Error404 from "./404";
 import "../../fiche.css"
 
 
@@ -16,6 +17,9 @@ export default function Fiche (){
     const target=logements.find((logement)=>logement.id===id)
     if(loading) return <p>Chargement</p>
     if(error) return <p>Erreur: {error}</p>
+    if(!target){
+        return <Error404 />
+    }
     return (
         
         <main>
