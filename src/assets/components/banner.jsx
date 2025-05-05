@@ -1,10 +1,14 @@
-import background from '../images/IMG.svg'
-export default function Banner(){
+
+export default function Banner({src,overlay,text}){
     return(
         <div className="banner">
-            <img src={background} alt="landscape"/>
-            <div className="overlay"></div>
-            <p>Chez vous, partout et ailleurs</p>
+            <img src={src} alt="landscape"/>
+            {
+                overlay && <div className="overlay"></div>
+
+            }
+           
+            <p>{text}</p>
         </div>
     )
 

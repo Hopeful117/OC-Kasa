@@ -1,0 +1,19 @@
+.banner .overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.drop-buttons-about{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+.dropdown {
+    width:1023px;
+}
+.dropdown li{
+    max-width: 1023px;
+    text-align: justify;
+  
+
+  }  
