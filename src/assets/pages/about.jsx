@@ -4,7 +4,7 @@ import DropdownButton from "../components/dropdown"
 import "../../about.css"
 export default function About (){
     return(
-        <main>
+        <main className="about">
         <Banner overlay={true} text="" src={background} />
         <div className="drop-buttons-about">
         <DropdownButton label="Fiabilité" items={["Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."]} />
