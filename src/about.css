@@ -8,13 +8,14 @@
     gap:30px;
     .dropdown {
         width:1023px;
-        .dropdown li{
-            max-width: 1023px;
-            text-align: justify;
-          
         
-          }  
     }
+    .dropdown li{
+        max-width: 1023px;
+        text-align: justify;
+      
+    
+      }  
     
 }
 
