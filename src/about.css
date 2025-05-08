@@ -1,11 +1,14 @@
+
 .about .banner .overlay{
     background-color: rgba(0, 0, 0, 0.3);
+    
 }
 
 .drop-buttons-about{
     display:flex;
     flex-direction: column;
     gap:30px;
+    margin-bottom: 30px;
     .dropdown {
         width:1023px;
         
@@ -19,3 +22,33 @@
     
 }
 
+
+@media screen and (max-width: 768px) {
+    .drop-buttons-about{
+        width:335px;
+        flex-direction: column;
+       
+        gap:20px;
+        .dropdown{
+          width:335px;
+          
+          .dropdown-button{
+            font-size: 13px;
+          }
+          .dropdown-icon{
+            width: 16px;
+            height:9.14px;
+          }
+         
+        }
+        .dropdown li  {
+          font-size: 12px;
+     
+        }
+      }
+
+     
+
+
+
+}

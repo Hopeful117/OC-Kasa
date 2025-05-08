@@ -1,7 +1,7 @@
 export default function Tag({name}){
     return(
         <div className="tag">
-        <p>{name}</p>
+        <p className="name-tag">{name}</p>
 
         </div>
     )

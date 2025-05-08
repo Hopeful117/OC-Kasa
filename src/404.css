@@ -19,6 +19,26 @@
     }
     .link{
         color:black;
+        margin-bottom: 100px;
     }
     
+}
+
+
+@media screen and (max-width: 768px) {
+    .error{
+        h1{
+        font-size: 96px;
+        margin-bottom: 50px;
+    }
+    p{
+        font-size: 18px;
+        text-align: center;
+        width:260px;
+    }
+    .link{
+        font-size: 14px;
+    }
+}
+
 }

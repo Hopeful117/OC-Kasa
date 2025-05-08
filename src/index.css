@@ -2,8 +2,9 @@
 
 
 
-body{
+body,#root{
   margin:0 auto;
+  
  
  
   
@@ -19,11 +20,13 @@ body{
   main{
     Width:1240px;
     margin: auto;
+   
     display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex:1;
+ 
+  
 
   }
   
@@ -66,10 +69,13 @@ footer{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin:0;
-  margin-top:100px;
-  position:relative;
+  margin:auto;
+
+  
+  position:static;
   bottom:0;
+  
+ 
   
  
   
@@ -88,6 +94,8 @@ footer{
   flex-wrap: wrap;
   margin-bottom: 100px;
   gap:30px;
+ 
+ 
   
     .card{
       padding: 0;
@@ -180,114 +188,76 @@ footer{
 
 }
 
-.carrousel{
-  width:1240px;
-  height:415px;
- 
- 
-    .pictures{
-      width:1240px;
-      height:415px;
-      object-fit: cover;
-      position:absolute;
 
+
+@media screen and (max-width: 768px) {
+  #root{
   
-     
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    box-sizing: border-box
+    
+  }
+  header{
+    width:335px;
+  
+    gap:20px;
+    justify-content:space-between;
+    gap:30px;
+    box-sizing: border-box;
+    padding:0;
+    padding-top:20px;
+    
+    
+    
+    
+    
+    img{
+      width:145px;
+      height:47px;
+      
+    }
+    nav{
+      gap:20px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    
    
-    }
-    button{
-      width:47px;
-      height:79px;
-      position:relative;
-      border:none;
-      background:none;
-      
-       
-      
-      
-
-    }
-    #next{
     
-      left:90%;
-      top:40%;
+  }
+  main{
+    max-width: 100%;
+
+  
+  .banner{
+    width:335px;
+    height:111px;
+    border-radius: 10px;
+    p{
+      font-size:24px;
+      line-height: 100%;
+      left:0;
+      top:20%;
+      transform: translate(0,0%);
+      max-width: 225px;
+      height:48px;
+      margin:5px;
+      margin-left:10px;
+      
     }
-
-    #previous{
-     
-      left:2%;
-      top:40%;
-    }
-
+   
+  }
+  .overlay{
+    border-radius: 10px;
+  }
+  .gallery{
+    flex-direction: column;
+  }
 }
-
-.title{
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 143%;
-  color:#FF6060;
-  margin-bottom:0;
-}
-
-.tag{
-  min-width: 115px;
-  Height:25px;
-  border-radius:10px;
-  padding:0 5px 0 5px;
-  background-color: #FF6060;
-  color:white;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-
-}
-.container{
-  width:100%;
  
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.logement{
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items:flex-start;
-  width:50%;
-  
-  h3{
-    margin-top:0;
-    font-weight: 500;
-    font-size: 18px;
-
-  }
 }
 
-.tags{
-  display:flex;
-  gap:15px;
-  
-}
-
-.host{
-  display:flex;
-  gap:10px;
-  img{
-    Width:64px;
-    Height:64px;
-    border-radius: 32px;
-
-  }
-  h3{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 143%;
-    color: #FF6060;
-    
-
-  }
-
-}

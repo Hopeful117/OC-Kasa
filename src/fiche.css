@@ -122,3 +122,303 @@
       transform:translateY(0);
     }
   }
+
+
+
+  .carrousel{
+    width:1240px;
+    height:415px;
+   
+   
+      .pictures{
+        width:1240px;
+        height:415px;
+        object-fit: cover;
+        position:absolute;
+  
+    
+       
+     
+      }
+      button{
+        width:47px;
+        height:79px;
+        position:relative;
+        border:none;
+        background:none;
+        
+         
+        
+        
+  
+      }
+      #next{
+      
+        left:90%;
+        top:40%;
+      }
+  
+      #previous{
+       
+        left:2%;
+        top:40%;
+      }
+  
+  }
+  
+  .title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 143%;
+    color:#FF6060;
+    margin-bottom:0;
+    margin-top: 0;
+  }
+  
+  .tag{
+    min-width: 115px;
+    Height:25px;
+    border-radius:10px;
+    padding:0 5px 0 5px;
+    background-color: #FF6060;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    .name-tag{
+      font-size: 14px;
+
+    }
+  
+  }
+  .container{
+    width:100%;
+   
+    display:flex;
+    flex-direction: column;
+    
+    
+    
+  }
+  .right{
+    display: flex;
+    align-items: flex-end;
+    
+    gap:15px;
+    
+    
+  
+    .rating{
+      display:flex;
+      align-items: center;
+      justify-content:space-between;
+      width:196px;
+   
+      height:36px;
+     
+      
+
+      .star-icon{
+        width:25px;
+        height:24px;
+       
+      }
+    }
+
+   
+    
+   
+  }
+  .left{
+    .logement{
+     
+      .title{
+        margin-left:0;
+      }
+    }
+  }
+ 
+  
+  .logement{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+    
+    h3{
+      margin-top:0;
+      font-weight: 500;
+      font-size: 18px;
+  
+    }
+  }
+  
+  .tags{
+    display:flex;
+    gap:15px;
+    
+  }
+  
+  .host{
+    display:flex;
+    gap:20px;
+    align-items: center;
+    
+    img{
+      Width:64px;
+      Height:64px;
+      border-radius: 32px;
+  
+    }
+    h3{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 143%;
+      color: #FF6060;
+      width:93px;
+      text-align: right;
+      
+      
+  
+    }
+  
+  }
+  .wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:100%;
+    margin-top: 30px;
+    
+ 
+  }
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .carrousel{
+    margin-top: 20px;
+    width:335px;
+    height:255px;
+    .pictures{
+      width:335px;
+      height:255px;
+    }
+    button{
+      width:24px;
+      height:24px;
+      img{
+        width:24px;
+        height:24px;
+      }
+     
+    }
+    #next{
+      left:82%;
+    }
+  }
+  .wrapper{
+    align-items: center;
+  
+    flex-direction: column;
+    .right{
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    .left{
+      width: 335px;
+    
+      .logement{
+        .title{
+          margin-left: 0;
+          font-size: 18px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+      .tags{
+        width:335px;
+        flex-wrap: wrap;
+       
+        .tag{
+          min-width:84px;
+          height:18px;
+          border-radius: 5px;
+          .name-tag{
+              font-size:10px;
+
+            }
+          
+        }
+
+      }
+   
+      
+
+    }
+    .right{
+      margin-top: 10px;
+      width: 335px;
+      
+  
+     justify-content: flex-end;
+      .rating{
+        justify-content: flex-start;
+        .star-icon{
+          width:13.41px;
+          height:13px;
+        }
+
+      }
+      .host{
+        gap:10px;
+      
+        h3{
+          font-size: 12px;
+          
+          
+         
+
+        }
+        img{
+          width:32px;
+          height:32px;
+        }
+      }
+    
+     
+
+    }
+    
+
+  }
+  .drop-buttons{
+    width:335px;
+    flex-direction: column;
+   
+    gap:30px;
+    .dropdown{
+      width:335px;
+      
+      .dropdown-button{
+        font-size: 13px;
+      }
+      .dropdown-icon{
+        width: 16px;
+        height:9.14px;
+      }
+     
+    }
+    .dropdown li  {
+      font-size: 12px;
+ 
+    }
+  }
+
+  
+}

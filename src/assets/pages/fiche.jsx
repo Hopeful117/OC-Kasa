@@ -23,33 +23,43 @@ export default function Fiche (){
     return (
         
         <main>
-        
+        <div>
         <Carroussel images={target.pictures}/>
-        <div className="container">
-            <div className="logement">
-                
-                    <h2 className="title">{target.title}</h2>
-                    <h3>{target.location}</h3>
-            </div>
-            
-                <div className="host">
-                    <h3>{target.host.name}</h3>
-                    <img src={target.host.picture}/>
-                </div>
-          
-      
-
 
         </div>
-      
-        <div className="container">
-        <div className="tags">
-            {target.tags.map((tag,index)=>(
-                <Tag name={tag} key={index} />
-            ))}
-            </div>
-            <StarRating rating={target.rating}/>
+       
+        <div className="wrapper">
+            <div className="container left">
+                <div className="logement">
+                    
+                        <h2 className="title">{target.title}</h2>
+                        <h3>{target.location}</h3>
+                </div>
+                <div className="tags">
+                {target.tags.map((tag,index)=>(
+                    <Tag name={tag} key={index} />
+                ))}
+                </div>
+                
+                
+        
 
+
+            </div>
+            
+            <div className="container right">
+                    <div className="host">
+                        <h3>{target.host.name}</h3>
+                        <img src={target.host.picture}/>
+                    </div>
+            
+            
+                    <StarRating rating={target.rating}/>
+
+
+                
+            
+            </div>
         </div>
         
         <div className="drop-buttons">
