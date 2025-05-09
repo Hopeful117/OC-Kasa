@@ -4,18 +4,15 @@
 
 body,#root{
   margin:0 auto;
-  
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column; 
+  font-family: 'Montserrat', sans-serif;
+}
  
  
-  
  
-  
- 
- 
-  
- 
-  
-  font-family:'Montserrat',sans-serif;
+
 
   main{
     Width:1240px;
@@ -25,12 +22,13 @@ body,#root{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
  
   
 
   }
   
-}
+
 
 header{
  Width:1240px;
@@ -63,17 +61,17 @@ footer{
   background-color: black;
   color:white;
   
-  width:100%;
+  width:100vw;
   Height:209px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin:auto;
+  padding:2rem 0;
+
 
   
-  position:static;
-  bottom:0;
+ 
   
  
   
@@ -191,16 +189,14 @@ footer{
 
 
 @media screen and (max-width: 768px) {
-  #root{
-  
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    box-sizing: border-box
+  body,#root{
+    margin:0;
+    padding: 0;
     
   }
+ 
+
+  
   header{
     width:335px;
   
@@ -210,6 +206,7 @@ footer{
     box-sizing: border-box;
     padding:0;
     padding-top:20px;
+    
     
     
     
@@ -237,6 +234,7 @@ footer{
     width:335px;
     height:111px;
     border-radius: 10px;
+    margin:30px;
     p{
       font-size:24px;
       line-height: 100%;
@@ -256,6 +254,7 @@ footer{
   }
   .gallery{
     flex-direction: column;
+    margin-bottom: 20px;
   }
 }
  
